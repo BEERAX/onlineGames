@@ -20,7 +20,7 @@ export default function Page() {
       >
         <div className="flex-1 flex flex-col w-full">
           <Header />
-          <Banner images={images} autoSlide={true} autoSlideInterval={4000} />
+          <Banner images={images} autoSlideInterval={4000} />
           <CategoryList />
           <GameList />
         </div>
