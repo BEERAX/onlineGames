@@ -2,7 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 
-const Banner = ({ images, autoSlideInterval = 3000 }) => {
+interface BannerProps {
+  images: string[];
+  autoSlideInterval?: number;
+}
+
+const Banner: React.FC<BannerProps> = ({
+  images,
+  autoSlideInterval = 3000,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
